@@ -9,7 +9,14 @@ const Footer = () => {
     <footer className="w-full py-12 md:px-12 px-8 border-t border-t-[#666666]">
       <div className="flex w-full flex-wrap items-start justify-between w-full text-white">
         <div className="flex flex-col md:w-2/5 w-full">
-          <h1 className="text-2xl md:pb-4 text-primary">Webifywave</h1>
+          <div className="flex items-end gap-2">
+            <img
+              src="/logo.png"
+              alt="webify wave"
+              className="w-16 h-16 object-cover"
+            />
+            <h1 className="text-2xl md:pb-4 text-primary">Webify Wave</h1>
+          </div>
           <p className="text-gray-400 text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
             quis quas expedita amet, aliquid harum temporibus obcaecati eaque

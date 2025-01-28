@@ -38,7 +38,12 @@ const Navbar = () => {
       <nav className="h-20 border-b border-borderColor relative z-[1000]">
         <div className="flex flex-nowrap justify-between items-center h-full px-6">
           <a href="/">
-            <h2 className="sm:text-2xl text-lg">Webcore Technologies</h2>
+            <img
+              src="/logo.png"
+              alt="Webify web"
+              className="h-16 w-16 rounded-full object-cover inline"
+            />
+            <span className="text-lg ml-4 font-medium">Webify Wave</span>
           </a>
           <div className="hidden lg:block">
             <ul className="flex flex-nowrap justify-between items-center h-full">

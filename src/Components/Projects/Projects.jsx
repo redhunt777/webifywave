@@ -39,7 +39,7 @@ const Projects = () => {
           <h1 className="text-primary mb-4 text-lg tracking-widest">
             Featured Work{" "}
             <span className="absolute">
-              <WiStars className="inline text-primary text-6xl md:ml-64" />
+              <WiStars className="inline text-primary text-6xl lg:ml-64" />
             </span>{" "}
           </h1>
           <h2 className="text-4xl relative">

@@ -57,12 +57,14 @@ export const StickyScroll = ({ content, contentClassName }) => {
       className="py-20"
     >
       <div className="w-full md:w-1/2 md:px-12 px-8">
-        <h1 className="text-primary text-lg mb-4 tracking-widest">About Us</h1>
-        <h2 className="text-4xl mb-4 relative">
-          Meet the team behind the magic{" "}
-          <span className="absolute">
-            <WiStars className="inline text-primary text-6xl ml-64 " />
+        <h1 className="text-primary text-lg mb-4 tracking-widest">
+          About Us{" "}
+          <span className="absolute ">
+            <WiStars className="inline text-primary text-6xl lg:ml-64" />
           </span>
+        </h1>
+        <h2 className="text-4xl mb-4 relative">
+          Meet the team behind the magic
         </h2>
       </div>
       <motion.div

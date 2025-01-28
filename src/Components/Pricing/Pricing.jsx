@@ -61,13 +61,13 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="flex flex-wrap justify-center gap-4 md:gap-2 items-center justify-between">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-8 items-center">
         {cards.map((card, index) => (
           <div
             key={index}
             className={`relative bg-[#202020] ${
-              card.title == "Standard" && "md:scale-110"
-            } max-w-[22rem] border border-[#202020] w-full md:w-1/3 rounded-lg shadow-lg hover:border-primary transition-transform duration-300 ease-in-out`}
+              card.title == "Standard" && "xl:scale-110"
+            } max-w-[22rem] border border-[#202020] w-full min-w-min lg:w-1/3 rounded-lg shadow-lg hover:border-primary transition-transform duration-300 ease-in-out`}
           >
             {/* Content */}
             <div className="px-6 py-12">

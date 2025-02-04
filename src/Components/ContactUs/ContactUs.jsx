@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
-    <div className="md:px-12 px-8 py-12 flex flex-wrap items-center justify-between">
+    <div className="md:px-12 px-8 py-12 flex flex-wrap items-center justify-between contact">
       {" "}
       <div className="w-full md:w-1/2 md:mb-16 mb-8">
         <h1 className="text-primary text-lg mb-4 tracking-widest">
@@ -21,24 +21,36 @@ const ContactUs = () => {
         </h2>
         <div className="flex flex-col gap-1 mb-4">
           <h1 className="text-primary text-lg">Contact Details</h1>
-          <p className="text-sm text-zinc-300">Phone: 123-456-7890</p>
+          <p className="text-sm text-zinc-300">Phone: +91-8368747835</p>
           <p className="text-sm text-zinc-300">Email: webifyweb@gmail.com</p>
         </div>
         <div className="flex flex-col gap-2 mt-4">
           <h1 className="text-primary">Follow Us</h1>
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+            <a
+              className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
+              href="/"
+            >
               <FaInstagramSquare />
-            </div>
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+            </a>
+            <a
+              className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
+              href="/"
+            >
               <FaFacebookSquare />
-            </div>
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+            </a>
+            <a
+              className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
+              href="/"
+            >
               <FaTwitterSquare />
-            </div>
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+            </a>
+            <a
+              className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
+              href="/"
+            >
               <FaLinkedin />
-            </div>
+            </a>
           </div>
         </div>
       </div>

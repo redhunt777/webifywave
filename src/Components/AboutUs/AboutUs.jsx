@@ -3,14 +3,14 @@ import { StickyScroll } from "../ui/card_sticky";
 
 const content = [
   {
-    title: "Jane Doe",
-    role: "Designer",
+    title: "Ansh Khanna",
+    role: "Co-Founder",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Ansh Khanna, co-founder of Webify Wave, leverages his expertise in marketing and communication to craft compelling brand strategies, drive engagement, and ensure seamless client interactions for business growth. ",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="/travel.png"
+          src="/Ansh_profile.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -20,14 +20,14 @@ const content = [
     ),
   },
   {
-    title: "John Doe",
-    role: "Developer",
+    title: "Sarthak Singh",
+    role: "Co-Founder",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "Sarthak Singh, co-founder of Webify Wave, is a tech expert specializing in web development. With experience in building multiple high-performance websites, he ensures cutting-edge, scalable, and innovative digital solutions. ",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="/Screenshot 2024-12-20 024647.png"
+          src="Sarthak.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -37,14 +37,14 @@ const content = [
     ),
   },
   {
-    title: "James Doe",
-    role: "CEO",
+    title: "Shaurya Aditya Verma",
+    role: "Co-Founder",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Shaurya Aditya Verma, co-founder of Webify Wave, combines technical expertise with strong communication skills to bridge the gap between innovation and user experience, delivering impactful and seamless digital solutions. ",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="/travel.png"
+          src="/Shaurya.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -57,7 +57,7 @@ const content = [
 
 const AboutUs = () => {
   return (
-    <div className="w-full pt-12 mt-12 relative">
+    <div className="w-full about pt-12 mt-12 relative">
       <div className="w-full">
         <StickyScroll content={content} />
       </div>

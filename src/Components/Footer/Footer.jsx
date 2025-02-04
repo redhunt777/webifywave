@@ -17,21 +17,20 @@ const Footer = () => {
             />
             <h1 className="text-2xl md:pb-4 text-primary">Webify Wave</h1>
           </div>
-          <p className="text-gray-400 text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            quis quas expedita amet, aliquid harum temporibus obcaecati eaque
-            illo animi facilis commodi nostrum, est at, exercitationem
-            doloremque illum architecto suscipit.
+          <p className="text-gray-400 mt-4 text-sm">
+            Webify Wave is a dynamic web development agency creating innovative,
+            high-performance websites and digital solutions. We specialize in
+            custom designs, e-commerce and web apps.
           </p>
         </div>
         <div className="flex flex-col md:gap-4 mt-4">
           <h1 className="text-primary">Let's Connect</h1>
           <p className="text-gray-400 text-sm">
-            ABC, Bit Mesra <br />
+            Bit Mesra <br />
             Ranchi- 835215
           </p>
           <p className="text-gray-400 text-sm">webifywave@gmail.com</p>
-          <p className="text-gray-400 text-sm">(91+) 4567837821</p>
+          <p className="text-gray-400 text-sm">(91+) 8368747835</p>
         </div>
         <div className="flex flex-col md:gap-4 mt-4">
           <h1 className="text-primary">Link</h1>

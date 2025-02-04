@@ -43,7 +43,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="my-16 md:mx-12 mx-8">
+    <div className="my-16 md:mx-12 mx-8 pricing">
       {/* Heading Section */}
       <div className="w-full md:w-1/2 md:mb-16 mb-8">
         <h1 className="text-primary text-lg mb-4 tracking-widest">

@@ -24,11 +24,8 @@ const App = () => {
         <Pricing />
         <AnimatedTestimonials />
         <div className="relative w-full overflow-x-hidden">
-          <div className="absolute top-[0] -left-[32rem] w-[200px] h-[400px] md:w-[600px] md:h-[530px] bg-primary rounded-full opacity-25 filter blur-3xl -z-10" />
+          <div className="absolute bottom-[0] -right-[32rem] w-[200px] h-[400px] md:w-[600px] md:h-[530px] bg-primary rounded-full opacity-25 filter blur-3xl -z-10" />
           <ContactUs />
-        </div>
-        <div className="relative w-full overflow-x-hidden">
-          <div className="absolute top-[0] -right-[32rem] w-[200px] h-[400px] md:w-[600px] md:h-[530px] bg-primary rounded-full opacity-25 filter blur-3xl -z-10" />
           <Faqs />
         </div>
         <Footer />

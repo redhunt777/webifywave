@@ -55,9 +55,9 @@ const AnimatedTestimonials = () => {
         </div>
 
         <div className="md:w-1/2 w-full hidden md:block text-gray-300 text-xl pr-12 pl-16 flex flex-col justify-center">
-          Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-          quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-          voluptas nulla pariatur.
+          Our clients are our biggest supporters. Would you like to know what
+          our clients think about us? Take a look for yourself in the
+          testimonials below.
         </div>
       </div>
       <AnimatedTestimonialsUI testimonials={testimonials} />

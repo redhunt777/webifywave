@@ -31,9 +31,9 @@ const Services = () => {
     },
     {
       icon: <FaLayerGroup className="text-5xl text-primary" />,
-      title: "Branding & Digital Strategy",
+      title: "Hosting and Domain Services",
       description:
-        "Build a memorable online presence with cohesive branding and targeted digital strategies. We help you connect with your audience, amplify your message, and grow your brand.",
+        "Get your website online with our reliable hosting and domain services. We provide secure, high-speed hosting solutions that keep your site running smoothly and your data protected.",
     },
     {
       icon: <MdSettingsApplications className="text-5xl text-primary" />,

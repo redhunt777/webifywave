@@ -41,7 +41,7 @@ export const ParallaxScroll = ({ images, className }) => {
             >
               <img
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover rounded-lg gap-10 !m-0 !p-0"
                 height="400"
                 width="400"
                 alt="thumbnail"

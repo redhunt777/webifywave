@@ -79,28 +79,37 @@ export const StickyScroll = ({ content, contentClassName }) => {
           <div className="max-w-2xl">
             {content.map((item, index) => (
               <div key={item.title + index} className="my-20">
-                <motion.h2
-                  initial={{
-                    opacity: 0,
-                  }}
-                  animate={{
-                    opacity: activeCard === index ? 1 : 0.3,
-                  }}
-                  className="text-2xl font-bold text-slate-100"
-                >
-                  {item.title}
-                </motion.h2>
-                <motion.h3
-                  initial={{
-                    opacity: 0,
-                  }}
-                  animate={{
-                    opacity: activeCard === index ? 1 : 0.3,
-                  }}
-                  className="text-kg text-slate-300"
-                >
-                  {item.role}
-                </motion.h3>
+                <div className="flex items-center justify-between gap-2">
+                  <div>
+                    <motion.h2
+                      initial={{
+                        opacity: 0,
+                      }}
+                      animate={{
+                        opacity: activeCard === index ? 1 : 0.3,
+                      }}
+                      className="text-2xl font-bold text-slate-100"
+                    >
+                      {item.title}
+                    </motion.h2>
+                    <motion.h3
+                      initial={{
+                        opacity: 0,
+                      }}
+                      animate={{
+                        opacity: activeCard === index ? 1 : 0.3,
+                      }}
+                      className="text-kg text-slate-300"
+                    >
+                      {item.role}
+                    </motion.h3>
+                  </div>
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="rounded-full h-20 w-20 lg:hidden object-cover"
+                  />
+                </div>
                 <motion.p
                   initial={{
                     opacity: 0,

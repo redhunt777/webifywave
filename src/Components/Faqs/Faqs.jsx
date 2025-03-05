@@ -78,7 +78,7 @@ const Faq = () => {
               </div>
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  activeId === i ? "max-h-48" : "max-h-0"
+                  activeId === i ? "max-h-auto" : "max-h-0"
                 }`}
               >
                 <div className="px-4 py-3 bg-zinc-900 text-[#EEEEEE]">

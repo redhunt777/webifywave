@@ -27,7 +27,7 @@ const PastWork = [
 
 const Hero = () => {
   return (
-    <div className="relative home my-12 xl:my-0 xl:min-h-screen text-white flex items-center w-full ">
+    <div className="relative home my-32 xl:my-0 xl:min-h-screen text-white flex items-center w-full ">
       <div className="lg:ml-40 lg:w-[65%] w-4/5 mx-8">
         <h1 className="text-4xl md:text-7xl font-bold relative tracking-wide md:mr-24">
           We develop{" "}

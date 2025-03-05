@@ -55,7 +55,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="md:w-1/2 w-full">
-        <form className="flex flex-col md:p-12">
+        <form className="flex flex-col md:p-12 md:pr-0">
           <div className="mb-4">
             <label htmlFor="name" className="block text-primary text-lg mb-2">
               Name

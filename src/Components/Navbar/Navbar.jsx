@@ -15,8 +15,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 h-20 border-b border-borderColor z-[1000] backdrop-filter backdrop-blur-sm bg-opacity-50	 shadow-md">
-      <div className="flex justify-between items-center h-full px-6">
+    <nav className="fixed top-0 left-0 right-0 h-20 border-b border-borderColor z-[1000] backdrop-filter backdrop-blur-sm bg-opacity-50 shadow-md">
+      <div
+        className={`flex justify-between items-center h-full px-6 ${
+          isOpen && "bg-[#202020]"
+        }  lg:bg-transparent`}
+      >
         {/* Logo */}
         <ScrollLink
           className="flex items-center cursor-pointer"
@@ -78,7 +82,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden fixed top-0 left-0 w-full h-full bg-[#202020] z-[999] flex flex-col items-center justify-center">
+        <div className="lg:hidden fixed left-0 w-full max-h-96 h-screen bg-[#202020] z-[999] flex flex-col items-center justify-center border-t border-borderColor">
           <ul className="flex flex-col space-y-6">
             {Links.map((item) => (
               <li key={item.id}>
@@ -94,12 +98,12 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button
+          {/* <button
             onClick={() => setIsOpen(false)}
             className="absolute top-6 right-6 text-white text-2xl"
           >
             ✕
-          </button>
+          </button> */}
         </div>
       )}
     </nav>

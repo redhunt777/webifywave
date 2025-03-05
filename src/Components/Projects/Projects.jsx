@@ -39,10 +39,8 @@ const Projects = () => {
         </div>
 
         <div className="md:w-1/2 w-full hidden md:block text-gray-300 text-xl pr-12 pl-16 flex flex-col justify-center">
-          We have worked on a variety of projects, ranging from simple websites
-          to complex web applications. Our goal is to provide our clients with
-          high-quality software that meets their needs and exceeds their
-          expectations.
+          Our goal is to provide our clients with high-quality software that
+          meets their needs and exceeds their expectations.
         </div>
       </div>
       <ParallaxScroll images={images} />

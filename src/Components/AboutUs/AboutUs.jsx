@@ -1,10 +1,12 @@
 import React from "react";
 import { StickyScroll } from "../ui/card_sticky";
+import { img } from "framer-motion/client";
 
 const content = [
   {
     title: "Ansh Khanna",
     role: "Co-Founder",
+    img: "/Ansh_profile.jpg",
     description:
       "Ansh Khanna, co-founder of Webify Wave, leverages his expertise in marketing and communication to craft compelling brand strategies, drive engagement, and ensure seamless client interactions for business growth. ",
     content: (
@@ -22,6 +24,7 @@ const content = [
   {
     title: "Sarthak Singh",
     role: "Co-Founder",
+    img: "/Sarthak.jpg",
     description:
       "Sarthak Singh, co-founder of Webify Wave, is a tech expert specializing in web development. With experience in building multiple high-performance websites, he ensures cutting-edge, scalable, and innovative digital solutions. ",
     content: (
@@ -39,6 +42,7 @@ const content = [
   {
     title: "Shaurya Aditya Verma",
     role: "Co-Founder",
+    img: "/Shaurya.jpg",
     description:
       "Shaurya Aditya Verma, co-founder of Webify Wave, combines technical expertise with strong communication skills to bridge the gap between innovation and user experience, delivering impactful and seamless digital solutions. ",
     content: (

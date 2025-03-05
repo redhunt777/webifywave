@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="w-full py-12 md:px-12 px-8 border-t border-t-[#666666]">
-      <div className="flex w-full flex-wrap items-start justify-between w-full text-white">
+      <div className="flex w-full gap-4 flex-wrap items-start justify-between w-full text-white">
         <div className="flex flex-col md:w-2/5 w-full">
           <div className="flex items-end gap-2">
             <img

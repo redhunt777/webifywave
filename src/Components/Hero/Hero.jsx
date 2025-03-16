@@ -48,7 +48,7 @@ const Hero = () => {
           digital solutions.
         </p>
         <div className="flex flex-row flex-wrap items-center justify-start mt-6 gap-4">
-          <ScrollLink to="pricing" smooth={true} duration={500} offset={-100}>
+          <ScrollLink to="contact" smooth={true} duration={500}>
             <button className="w-40 bg-transparent hover:bg-primary border border-primary hover:text-white text-primary px-4 py-2 rounded-md flex items-center justify-center gap-2 group mr-8">
               Get Started
               <span className="transition-transform duration-200 group-hover:translate-x-1.5">

@@ -4,8 +4,39 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    const form = e.target; // Get the form element
+    const formData = new FormData(form);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    emailjs
+      .sendForm("service_sz0y7cj", "template_a8o27ov", form, {
+        publicKey: "_UAqXaW9Gn-Nsu3lO",
+      })
+      .then(
+        () => {
+          console.log("Email sent successfully!");
+          alert("Email sent successfully!");
+          form.reset(); // Reset the form after successful submission
+        },
+        (error) => {
+          console.log("Error sending email:", error);
+        }
+      );
+  };
+
   return (
     <div className="md:px-12 px-8 py-12 flex flex-wrap items-center justify-between contact">
       {" "}
@@ -55,7 +86,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="md:w-1/2 w-full">
-        <form className="flex flex-col md:p-12 md:pr-0">
+        <form className="flex flex-col md:p-12 md:pr-0" onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-primary text-lg mb-2">
               Name
@@ -94,7 +125,10 @@ const ContactUs = () => {
               className="w-full p-4 border border-zinc-300 rounded-lg focus:outline-none focus:border-primary scrollbar-hide"
             />
           </div>
-          <button className="bg-primary text-white w-full p-4 rounded-lg hover:bg-[#0A959E] transition duration-300 ease-in-out">
+          <button
+            className="bg-primary text-white w-full p-4 rounded-lg hover:bg-[#0A959E] transition duration-300 ease-in-out"
+            type="submit"
+          >
             Send
           </button>
         </form>

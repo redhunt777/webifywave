@@ -32,27 +32,31 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">webifywave@gmail.com</p>
           <p className="text-gray-400 text-sm">(91+) 8368747835</p>
         </div>
-        <div className="flex flex-col md:gap-4 mt-4">
+        {/* <div className="flex flex-col md:gap-4 mt-4">
           <h1 className="text-primary">Link</h1>
           <p className="text-gray-400 text-sm">Testimonial</p>
           <p className="text-gray-400 text-sm">Pricing</p>
           <p className="text-gray-400 text-sm">Why Us?</p>
-        </div>
+        </div> */}
         <div className="flex flex-col md:gap-4 mt-4">
           <h1 className="text-primary">Follow Us</h1>
           <div className="flex items-center justify-center gap-2">
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-              <FaInstagramSquare />
-            </div>
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-              <FaFacebookSquare />
-            </div>
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-              <FaTwitterSquare />
-            </div>
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+            <a
+              className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
+              href="https://www.linkedin.com/company/webifywave/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin />
-            </div>
+            </a>
+            <a
+              className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
+              href="https://www.instagram.com/webifywave/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagramSquare />
+            </a>
           </div>
         </div>
       </div>

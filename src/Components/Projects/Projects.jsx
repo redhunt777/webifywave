@@ -23,7 +23,7 @@ const images = [
 
 const Projects = () => {
   return (
-    <div className="my-16 md:mx-12 mx-8">
+    <div className="my-16 md:mx-12 mx-8 project">
       {/* Heading Section */}
       <div className="mt-16 pb-4 flex flex-col md:flex-row">
         <div className="flex flex-col justify-center md:w-1/2 w-full ">

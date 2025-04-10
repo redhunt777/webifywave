@@ -7,8 +7,14 @@ import { FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
+  const [error, setError] = React.useState(null);
+  const [success, setSuccess] = React.useState(null);
+  const [loading, setLoading] = React.useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (loading) return; // Prevent multiple submissions while loading
+    setLoading(true); // Set loading state to true
+    setError(null); // Reset error state
     // Handle form submission logic here
     const form = e.target; // Get the form element
     const formData = new FormData(form);
@@ -17,7 +23,9 @@ const ContactUs = () => {
     const message = formData.get("message");
 
     if (!name || !email || !message) {
-      alert("Please fill in all fields.");
+      setError("Please fill in all fields.");
+      setSuccess(null);
+      setLoading(false); // Reset loading state
       return;
     }
 
@@ -28,11 +36,15 @@ const ContactUs = () => {
       .then(
         () => {
           console.log("Email sent successfully!");
-          alert("Email sent successfully!");
+          setSuccess("Email sent successfully!");
+          setError(null); // Reset error state
+          setLoading(false); // Reset loading state
           form.reset(); // Reset the form after successful submission
         },
         (error) => {
           console.log("Error sending email:", error);
+          setError("Error sending email. Please try again later.");
+          setSuccess(null); // Reset success state
         }
       );
   };
@@ -60,25 +72,29 @@ const ContactUs = () => {
           <div className="flex items-center gap-2">
             <a
               className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
-              href="/"
+              href="https://www.instagram.com/webifywave/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaInstagramSquare />
             </a>
-            <a
+            {/* <a
               className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
               href="/"
             >
               <FaFacebookSquare />
-            </a>
-            <a
+            </a> */}
+            {/* <a
               className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
               href="/"
             >
               <FaTwitterSquare />
-            </a>
+            </a> */}
             <a
               className="w-6 h-6 bg-primary rounded-full flex items-center justify-center"
-              href="/"
+              href="https://www.linkedin.com/company/webifywave/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin />
             </a>
@@ -128,9 +144,27 @@ const ContactUs = () => {
           <button
             className="bg-primary text-white w-full p-4 rounded-lg hover:bg-[#0A959E] transition duration-300 ease-in-out"
             type="submit"
+            disabled={loading} // Disable button while loading
           >
             Send
           </button>
+          {loading && (
+            <div className="text-center mt-4 text-sm text-gray-500">
+              Sending...
+            </div>
+          )}
+          {error && (
+            <div className="text-red-500 text-sm mt-4 text-center">{error}</div>
+          )}
+          {success && (
+            <div className="text-green-500 text-sm mt-4 text-center">
+              {success}
+            </div>
+          )}
+
+          <div className="text-center mt-4 text-sm text-gray-500">
+            We will get back to you as soon as possible.
+          </div>
         </form>
       </div>
     </div>
